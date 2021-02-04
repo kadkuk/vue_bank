@@ -2,7 +2,13 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/client">Create client</router-link> |
+      <router-link to="/account">Create account</router-link> |
+      <router-link to="/deposit">Deposit</router-link> |
+      <router-link to="/withdraw">Withdraw</router-link> |
+      <router-link to="/transfer">Transfer</router-link> |
+      <router-link to="/balance">Get balance</router-link> |
+      <router-link to="/history">Transactions history</router-link>
     </div>
     <router-view/>
   </div>
@@ -14,7 +20,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: dimgrey;
 }
 
 #nav {
@@ -23,10 +29,10 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: dimgrey;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: orange;
 }
 </style>
