@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Login from '../views/Login'
 import Client from '../views/Client'
 import Account from '../views/Account'
 import History from "@/views/History";
@@ -8,6 +8,7 @@ import Balance from "@/views/Balance";
 import Transfer from "@/views/Transfer";
 import Withdraw from "@/views/Withdraw";
 import Deposit from "@/views/Deposit";
+import Home from "@/views/Home";
 
 
 Vue.use(VueRouter)
@@ -22,6 +23,11 @@ const routes = [
     path: '/client',
     name: 'Client',
     component: Client
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login
   },
   {
     path: '/account',

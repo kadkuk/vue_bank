@@ -1,5 +1,5 @@
 <template>
-  <div class="register">
+  <div class="account">
     <img src="../assets/bank101.png">
     <table align="center">
       <br>
@@ -29,7 +29,8 @@
 let saveInJn = function () {
   this.$http.put('/bank/createaccount', this.accounts)
       .then(response =>{this.account = response.data
-        this.errorText = ''})
+        this.errorText = ''
+        })
       .catch(error => {
         this.errorText = error.response.data.errorMessage
         this.account = ''

@@ -43,9 +43,11 @@
 <script>
 
 let saveInJn = function () {
-  this.$http.post('/bank/client', this.clients)
+  this.$http.post('/public/client', this.clients)
       .then(response =>{this.client = response.data
-        this.errorText = ''})
+        this.errorText = ''
+
+      })
       .catch(error => {
         this.errorText = error.response.data.errorMessage
         this.client = ''

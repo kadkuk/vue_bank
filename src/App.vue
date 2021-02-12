@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
       <router-link to="/client">Create client</router-link> |
+      <router-link to="/login">Login</router-link> |
       <router-link to="/account">Create account</router-link> |
       <router-link to="/deposit">Deposit</router-link> |
       <router-link to="/withdraw">Withdraw</router-link> |
